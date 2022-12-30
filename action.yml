@@ -8,7 +8,6 @@ inputs:
   tag:  # id of input
     description: 'The tag'
     required: true
-    default: 'World'
 outputs:
   deleted: # id of output
     description: 'Done!'
