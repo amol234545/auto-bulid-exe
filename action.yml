@@ -1,0 +1,17 @@
+name: 'Delete all releases'
+description: 'Delete all releases in a tag'
+inputs:
+  token:  # id of input
+    description: 'The github token. Default ${{env.GITHUB_TOKEN}}'
+    required: false
+    default: ${{env.GITHUB_TOKEN}}
+  tag:  # id of input
+    description: 'The tag'
+    required: true
+    default: 'World'
+outputs:
+  deleted: # id of output
+    description: 'Done!'
+runs:
+  using: 'node16'
+  main: 'index.js'
